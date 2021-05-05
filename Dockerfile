@@ -29,6 +29,8 @@ RUN apk --no-cache add \
         curl \
     && rm -rf /var/cache/apk/*
 
+# git
+RUN apk add --no-cache git
 # node.js & npm
 RUN apk add --update nodejs nodejs-npm
 # standard-version
