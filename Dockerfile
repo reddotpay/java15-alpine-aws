@@ -29,6 +29,11 @@ RUN apk --no-cache add \
         curl \
     && rm -rf /var/cache/apk/*
 
+# node.js & npm
+RUN apk add --update nodejs nodejs-npm
+# standard-version
+RUN npm install -g standard-version
+
 # ENTRYPOINT ["aws", "s3", "ls"]
 # COPY . /app
 
