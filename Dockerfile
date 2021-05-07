@@ -34,7 +34,7 @@ RUN apk add --no-cache git
 # node.js & npm
 RUN apk add --update nodejs nodejs-npm
 # standard-version
-RUN npm install -g standard-version
+RUN npm install -g standard-version markdown2confluence
 
 # ENTRYPOINT ["aws", "s3", "ls"]
 # COPY . /app
@@ -46,4 +46,4 @@ RUN npm install -g standard-version
 # WORKDIR /app
 # RUN echo "zestho" > test.txt
 
-COPY ./scripts /app/scripts
+#COPY ./scripts /app/scripts
