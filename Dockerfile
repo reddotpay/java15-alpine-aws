@@ -36,14 +36,4 @@ RUN apk add --update nodejs nodejs-npm
 # standard-version
 RUN npm install -g standard-version markdown2confluence
 
-# ENTRYPOINT ["aws", "s3", "ls"]
-# COPY . /app
-
-#WORKDIR /app
-#COPY . .
-
-
-# WORKDIR /app
-# RUN echo "zestho" > test.txt
-
-#COPY ./scripts /app/scripts
+RUN apk add --update docker
